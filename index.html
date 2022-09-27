@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed Game</title>
+</head>
+<body>
+    <main>
+    <h1>Feed carrots to Rabbit</h1>
+    <section class ="game1">
+    <h2>Carrots collected: <span id="score"></span></h2>
+    <div class = "game">
+    <div class="circle" value="1"></div>
+    <div class="circle" value="2"></div>
+    <div class="circle" value="3"></div>
+    <div class="circle" value="4"></div>
+</div>
+
+<button type="submit" id="start">Start Game</button>
+<button type="submit" id="stop">Stop Game</button>
+</section>
+<section id="overlay">
+    <div class="modal">
+        <p id="endResult"></p>
+        <p>game over</p>
+        <button type="submit" id="close">X</button>
+    </div>
+</section>
+
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
