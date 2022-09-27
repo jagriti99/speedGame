@@ -6,6 +6,9 @@ const closeBtn = document.querySelector("#close");
 const overlay = document.querySelector("#overlay");
 const endResult = document.querySelector("#endResult");
 
+const eating = document.querySelector("#eating");
+const start = document.querySelector("#startgame");
+
 let scoreNow = 0;
 let active = 0;
 let timer;
@@ -24,6 +27,7 @@ circles.forEach((circle, i) => {
 });
 
 const clickCircle = (i) => {
+  eating.play();
   if (i !== active) {
     return endGame();
   } else {
@@ -35,7 +39,7 @@ const clickCircle = (i) => {
 
 const startGame = (e) => {
   if (rounds >= 3) {
-    return endGame();
+    return stopGame();
   }
   for (let i = 0; i < circles.length; i++) {
     circles[i].style["pointer-events"] = "auto";
@@ -69,6 +73,7 @@ const startGame = (e) => {
   stopBtn.style.visibility = "visible";
 };
 const stopGame = (e) => {
+  start.play();
   overlay.style.visibility = "visible";
   endResult.textContent = `I just eat ${scoreNow}. Still hungry, feed me more`;
   clearTimeout(timer);

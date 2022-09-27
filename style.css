@@ -46,7 +46,7 @@ display:block;
     justify-content: center;
 }
 .circle{
-    background: rgb(170, 241, 200);
+    background: rgba(170, 237, 198, 0.636);
     height: 200px;
     width:200px;
     border-radius: 50%;
@@ -58,17 +58,16 @@ display:block;
 }
 
 .active{
-    background-image: url('./carrot.webp');
+    background-image: url('./image.png');
     background-repeat: no-repeat;
     background-position: center;
 }
-img{
-    width:100px;
-    height:100px;
-    border-radius: 50%; 
-    overflow:hidden; 
+.game img{
+    width: 10px;
     object-fit: cover;
+    object-position: left left;
 }
+
 #overlay{
     visibility: hidden;
     position:fixed;
@@ -76,17 +75,34 @@ img{
     left:0;
     height:100%;
     width:100%;
-    background-color: rgba(154, 109, 49, 0.323);
+    /* background-color: rgba(154, 109, 49, 0.323); */
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 .modal{
-    background-color: lightgreen;
+    
     padding:2rem;
-    width:40%;
-    height:25%;
+    width:30%;
+    height:40%;
     border-radius: 10px;
     position: relative;
+    background-image: url('./rabbit.jpeg');
+    background-size:fill;
+    background-repeat: no-repeat;
+    color:white; 
+}
+#close{
+   
+    margin-top: 7.5rem;
+
+}
+#overlay.over{
+    position: absolute;
+    top:80px;
+    right:15px;
+    text-align: right;
 }
