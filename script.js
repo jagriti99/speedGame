@@ -75,7 +75,7 @@ const startGame = (e) => {
 const stopGame = (e) => {
   start.play();
   overlay.style.visibility = "visible";
-  endResult.textContent = `I only eat ${scoreNow}. Still hungry, feed me more`;
+  endResult.textContent = `I only eat ${scoreNow}. Still hungry, May I have more Pleaseee!`;
   clearTimeout(timer);
 };
 
