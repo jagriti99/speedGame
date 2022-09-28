@@ -23,7 +23,7 @@ h2{
 body{
     display: flex;
     justify-content: center;
-    cursor:url('')2 2 ,pointer;
+    /* cursor:url('./Profile_-_Snowball.webp')2 2 ,pointer; */
 }
 .game{
    display:flex;
@@ -55,6 +55,7 @@ display:block;
     justify-content: center;
     align-items: center;
     pointer-events: none;
+
 }
 
 .active{
