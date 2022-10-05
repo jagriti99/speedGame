@@ -16,7 +16,6 @@ let pace = 1000;
 let rounds = 0;
 
 // circles.disabled = true;
-
 stopBtn.style.visibility = "hidden";
 const getRndInteger = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
